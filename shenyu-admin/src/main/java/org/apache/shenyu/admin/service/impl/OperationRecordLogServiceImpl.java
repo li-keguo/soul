@@ -65,5 +65,6 @@ public class OperationRecordLogServiceImpl implements OperationRecordLogService 
         final long supportMaxTime = System.currentTimeMillis() - (dashboardProperties.getOnlyCleanDays() * 1000 * 60 * 60 * 24);
         Assert.isTrue(date.getTime() < supportMaxTime, String.format("Only supports cleaning data older than %d days", dashboardProperties.getOnlyCleanDays()));
         return recordLogMapper.deleteByBefore(date) > 0;
+        // teet
     }
 }
