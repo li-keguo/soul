@@ -148,6 +148,7 @@ public final class UpstreamCheckServiceTest {
                 .name("UrlError")
                 .handle("[{\"upstreamHost\":\"localhost\",\"protocol\":\"http://\",\"upstreamUrl\":\"divide-upstream-50\",\"weight\":50}]")
                 .build();
+        // tset
         SelectorDO selectorDOWithUrlReachable = SelectorDO.builder()
                 .pluginId(MOCK_PLUGIN_ID)
                 .name("UrlReachable")
